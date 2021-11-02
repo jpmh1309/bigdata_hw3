@@ -1,3 +1,4 @@
 *.crc
 *_SUCCESS*
+.vscode/
 __pycache__/

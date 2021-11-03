@@ -9,29 +9,23 @@ Jose Martinez
 
 ## Execution
 
-1. Create docker image
+1. Create database 
 
-   - ./build_image.sh
+   - cd db/
+   - ./run_image.sh 
 
-2. Run docker
+2. Create and docker image
 
-   - ./run_image.sh
+   - ./execute_image.sh
 
-3. Run main
+3. Inside the docker image, load jupyter notebook:
 
-   - ./execute.sh
-   - spark-submit programaestudiante.py -f datos/
+   - ./load_jupyter_notebook.sh
 
-4. Run whole tests
+4. In juypter notebook, run the following code:
 
-   - pytest
+   - cd sparkml/
 
-5. Run whole suite of tests
+5. Run jupyter notebook:
 
-   - pytest test_cajas.py
-   - pytest test_metricas.py
-   - pytest test_productos.py
-
-6. Run specific test
-
-   - pytest -k TEST_NAME
+   - model_hw3.ipynb

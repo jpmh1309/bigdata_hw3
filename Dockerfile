@@ -21,6 +21,7 @@ RUN pip3 install pyspark
 RUN pip3 install pytest
 RUN pip3 install notebook
 RUN pip3 install findspark
+RUN pip3 install pyspark-dist-explore
 RUN ln /usr/bin/python3.7 /usr/bin/python
 
 WORKDIR /src
